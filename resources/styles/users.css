@@ -1,0 +1,83 @@
+.cv-contacts {
+  height: 100%;
+}
+
+.users-list {
+  height: 100%;
+  overflow: auto;
+}
+
+.user-item {
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+.user-item .user-item__text {
+  color: rgba(255, 255, 255, .7);
+}
+
+.user-item:hover {
+  background-color: rgba(255,255,255, 0.07);
+}
+
+.user-item:hover .user-item__text {
+  color: #ffffff;
+
+}
+
+.user-item--current {
+  background-color: #3657f8;
+}
+
+.user-item--current .user-item__text {
+  color: #ffffff;
+}
+
+.user-item__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 32px 16px 16px;
+}
+
+.user-item__avatar {
+  margin-right: 12px;
+}
+
+.user-item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ant-avatar-icon.user-item__icon {
+  background: #ffffff;
+  color: #1890ff;
+}
+
+.user-settings {
+  background-color: #334453;
+}
+
+.user-item--has-new-message {
+  position: relative;
+  background-color: #3657f870;
+}
+
+.user-item__avatar {
+  position: relative;
+}
+
+.user-item__avatar--is-online::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #52c41a;
+  border-radius: 100%;
+}

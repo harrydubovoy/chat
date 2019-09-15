@@ -1,0 +1,79 @@
+.upload-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 185px;
+  background-color: #efefef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.upload-image:hover {
+  background-color: #dcdbdb;
+}
+
+.upload-image__inner {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.upload-image__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+
+.upload-image__preview {
+  flex: 1 1 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upload-image__spin {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+}
+
+.upload-image__button--delete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0,0,0, 0.5);
+  transition: all .25s linear;
+}
+
+.upload-image:hover .upload-image__button--delete {
+  opacity: 1;
+  visibility: visible;
+}
+
+.upload-image__button-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  font-size: 42px;
+  height: 100%;
+}

@@ -1,0 +1,31 @@
+.cv-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cv-auth-form {
+  width: 370px;
+  background-color: #fff;
+  padding: 40px 30px 36px;
+}
+
+.cv-auth-form__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-form__button + .auth-form__link {
+  margin-left: 8px;
+}
+
+.auth-form__action {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+}
+
+.auth-form__button + .auth-form__button {
+  margin-left: 12px;
+}

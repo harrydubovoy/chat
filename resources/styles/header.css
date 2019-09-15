@@ -1,0 +1,37 @@
+.cv-header {
+  background-color: #0e1f35;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.cv-header__inner {
+  display: flex;
+  align-items: center;
+  padding: 0 19px;
+}
+
+.header-navigation {
+  margin-left: auto;
+}
+
+.navigation-list__item + .navigation-list__item {
+  margin-left: 16px;
+}
+
+.logo {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.logo__text {
+  margin-left: 8px;
+}

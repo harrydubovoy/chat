@@ -1,0 +1,15 @@
+.cv-content__profile {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.cv-content__profile-header {
+  margin-bottom: 32px;
+  border-bottom: 1px solid #dadada;
+}
+
+.profile-form {
+  margin-top: -14px;
+}

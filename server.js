@@ -12,7 +12,7 @@ mongoose.Promise = global.Promise;
 mongoose.set('debug', false);
 
 //static files
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 app.use(express.static(path.join(__dirname, 'storage')));
 
 // parse application/x-www-form-urlencoded
@@ -29,7 +29,7 @@ require('./passport.config');
 const connect = `mongodb://convert:convert123456@ds263127.mlab.com:63127/convert`;
 
 // start server
-mongoose.connect(connect, {useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false}, (error) => {
+mongoose.connect(connect, {useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false, useUnifiedTopology: true}, (error) => {
 
   if (error) {
     console.error('Database Connect: ', error);

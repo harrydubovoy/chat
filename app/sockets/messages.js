@@ -69,4 +69,9 @@ module.exports = function Rooms(socket, currentUser) {
     setTimeout(() => socket.to(userId).emit('message::end-typing', roomId), 2000);
   });
 
+  socket.on('message::end-typing', (roomId) => {
+    const userId = getID(roomId, currentUserId);
+    socket.to(userId).emit('message::end-typing', roomId);
+  });
+
 };

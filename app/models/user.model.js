@@ -5,36 +5,20 @@ const passportLocalMongoose = require('passport-local-mongoose');
 const UserSchema = new Schema({
   username: {
     type: String,
-  },
-  image: {
-    type: String,
-    default: '',
-  },
-  firstName: {
-    type: String,
-    default: '',
-  },
-  lastName: {
-    type: String,
-    default: '',
-  },
-  phone: {
-    type: String,
-    default: '',
-  },
-  country: {
-    type: String,
-    default: '',
+    required: true,
   },
   email: {
     type: String,
+    required: true,
   },
+  image: '',
+  firstName: '',
+  lastName: '',
+  phone: '',
+  country: '',
   rooms: [],
   unreadMessages: [],
-  isOnline: {
-    type: Boolean,
-    default: false,
-  },
+  isOnline: false,
 });
 
 UserSchema.plugin(passportLocalMongoose, {
